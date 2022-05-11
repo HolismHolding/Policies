@@ -6,9 +6,11 @@ while read change; do
     export FileName=$(basename $File)
     export Extension=${File#*.}
     export FileDirectory=$(dirname $File)
+    IFS='/' read -ra FileDirectoryParts <<< "$FileDirectory"
+    export FileDirectoryParts=$FileDirectoryParts
     if [[ $FileDirectory == *"Site"* ]]; then
-        /HolismHolding/Policies/Next/Run.sh
+        source /HolismHolding/Policies/Next/Run.sh
     else
-        echo "Not next policies"
+        echo 
     fi
 done

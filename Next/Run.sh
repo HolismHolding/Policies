@@ -1,0 +1,2 @@
+echo "${FileDirectoryParts[@]}"
+echo $FileName
