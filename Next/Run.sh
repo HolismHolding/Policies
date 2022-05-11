@@ -1,2 +1,1 @@
-echo "${FileDirectoryParts[@]}"
-echo $FileName
+source /HolismHolding/Policies/Next/FileAndPathCasing.sh
