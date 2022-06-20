@@ -1,0 +1,7 @@
+Use Perl or Python to create policies.
+
+They are preinstalled on Ubuntu.
+
+`perl -v`
+
+`python3 --version`
